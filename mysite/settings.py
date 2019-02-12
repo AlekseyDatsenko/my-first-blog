@@ -25,7 +25,7 @@ SECRET_KEY = '73r6@aj(djvn4$d443twru^3!s=@lt(i0u17m40kwfn&36%e=('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'loftandlight.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'stepbystep.pythonanywhere.com']
 
 
 # Application definition
