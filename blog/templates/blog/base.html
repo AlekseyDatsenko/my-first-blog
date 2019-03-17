@@ -4,11 +4,13 @@
 		<title>My blog</title>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-		<link href="https://fonts.googleapis.com/css?family=EB Garamond&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link hrel="stylesheet" href="{% static 'css/blog.css' %}">
 	</head>
 	<body>
 	<div class="page-header">
+		{% if user.is_authenticated %}
+			<a href="{%	url	'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+		{% endif %}		
 		<h1><a href="/">Step by step</a></h1>
 	</div>
 	<div class="content container">
